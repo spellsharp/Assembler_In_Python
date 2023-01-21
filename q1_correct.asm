@@ -1,0 +1,25 @@
+@0
+D=M
+23@INFINITE_LOOP
+D;JLE
+16@counter
+M=D
+16384@SCREEN
+D=A
+17@address
+M=D
+(LOOP) 17@address
+A=M
+M=-1
+17@address
+D=M
+@32
+D=D+A
+17@address
+M=D
+16@counter
+MD=M-1
+10@LOOP
+D;JGT
+(INFINITE_LOOP) 23@INFINITE_LOOP
+0;JMP
