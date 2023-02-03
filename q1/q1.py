@@ -1,4 +1,6 @@
-old_file = open('Rect.asm','r')
+import os
+os.chdir('/home/shrisharanyan/Desktop/nand2tetris/Assembler_In_Python/q1')
+old_file = open('/home/shrisharanyan/Desktop/nand2tetris/Assembler_In_Python/Rect.asm','r')
 
 line_list = old_file.readlines()
 print(line_list)

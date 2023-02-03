@@ -1,4 +1,6 @@
-file_open = open('no_white.asm','r')
+import os
+os.chdir('/home/shrisharanyan/Desktop/nand2tetris/Assembler_In_Python/q2')
+file_open = open('/home/shrisharanyan/Desktop/nand2tetris/Assembler_In_Python/q1/q1.asm','r')
 
 list_file = file_open.readlines()
 

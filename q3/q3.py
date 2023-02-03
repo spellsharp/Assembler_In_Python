@@ -1,3 +1,6 @@
+import os
+os.chdir('/home/shrisharanyan/Desktop/nand2tetris/Assembler_In_Python/q3')
+
 symbol_table = {'R0':'0','R1':'1','R2':'2','R3':'3','R4':'4','R5':'5',
 'R6':'6','R7':'7','R8':'8','R9':'9','R10':'10','R11':'11',
 'R12':'12','R13':'13','R14':'14','R15':'15','SP':'0',
@@ -10,10 +13,10 @@ label_list = []
 for i in symbol_table.keys():
     symbol_list.append(i)
 
-file_now = open('q1.asm','r')
+file_now = open('/home/shrisharanyan/Desktop/nand2tetris/Assembler_In_Python/q1/q1.asm','r')
 
 lines_list = file_now.readlines()
-l = len(lines_list)
+# l = len(lines_list)
 count = -1
 variable_value = count + 16
 for i in lines_list:
@@ -51,12 +54,8 @@ for i in key_list:
     if len(i) > len(longest):
         longest = i
 
-print()
-print(longest)
-print()
-print(symbol_table)
+# print()
+# print(longest)
+# print()
+# print(symbol_table)
 
-symbol_file = open('q3.asm','w')
-symbol_file.write('SYMBOL'.ljust(len(longest)) + '\t' + 'VALUES'.ljust(len(longest)) + '\n')
-for keys, values in symbol_table.items():
-    symbol_file.write(keys.ljust(len(longest)) + '\t'+  str(values).ljust(len(longest)) + '\n')
