@@ -50,23 +50,6 @@ for i in line_list:
     
 print()
 
-
-list_file = q1
-
-q2 = []
-
-for i in list_file:
-    if i.startswith('('):
-        q2.append(i)
-        
-
-    if i.startswith('@'):
-        if i[1].isnumeric():
-            continue
-        else:
-            q2.append(i)
-
-
 symbol_list = []
 label_list = []
 
@@ -74,7 +57,6 @@ for i in symbol_table.keys():
     symbol_list.append(i)
 
 lines_list = q1
-
 print()
 
 count = -1
