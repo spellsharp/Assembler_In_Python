@@ -179,7 +179,6 @@ def A_instruction(line):
         return binline
 
 output_file = open('Output.hack','w')
-output = []
 instruct = q1
 for line in instruct:
     if isA_Instruction(line):
